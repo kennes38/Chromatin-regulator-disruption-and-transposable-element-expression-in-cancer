@@ -60,8 +60,6 @@ Key notebooks:
 
 ## Recommended Repository Organisation
 
-A clean repository structure could be organised as:
-
 ```text
 .
 ├── README.md
@@ -79,3 +77,11 @@ A clean repository structure could be organised as:
 │   ├── tables/
 │   └── figures/
 └── docs/
+
+## Data Sources
+The project used:
+TCGA mutation, copy-number and sample metadata.
+REdiscoverTE pan-cancer TE expression data.
+GENCODE gene coordinates for updated target-gene interval annotation.
+Public MPNST RNA-seq metadata and FASTQ files.
+SalmonTE human repeat reference annotation for the MPNST TE analysis.
