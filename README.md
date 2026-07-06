@@ -34,6 +34,7 @@ scripts/
 
 docs/
   file_manifest.md
+text'''
 
 **## Main Analyses**
 
