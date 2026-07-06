@@ -15,30 +15,11 @@ Together, these analyses tested whether chromatin regulator disruption is associ
 
 ## Repository Contents
 
-This repository is intended to share analysis code only. Raw sequencing files, downloaded reference resources, large intermediate files and full generated result outputs are not included.
+This repository is intended to share analysis code. Raw sequencing files, downloaded reference resources, large intermediate files and full generated result outputs are not included.
 
-Suggested organisation:
+## Main Analyses
 
-```text
-notebooks/
-  01_tcga_prc2/
-  02_tcga_histone_modifiers/
-  03_tcga_swi_snf/
-  04_tcga_individual_gene_models/
-  05_mpnst_salmonte/
-
-scripts/
-  helper_workflows/
-  figures/
-  supplementary_tables/
-
-docs/
-  file_manifest.md
-text'''
-
-**## Main Analyses**
-
-**##TCGA Chromatin Regulator Analyses**
+## TCGA Chromatin Regulator Analyses
 
 The TCGA analysis identifies loss-of-function mutations and candidate homozygous deletions affecting selected chromatin regulator genes, matches altered tumours to wild-type controls, and compares TE expression using REdiscoverTE-derived expression values.
 The main chromatin regulator groups analysed were:
@@ -73,7 +54,7 @@ GENCODE_coordinate_verification_all_15_genes.ipynb
 generic_chromatin_loss_workflow.R
 prc2_tcga_loss_workflow.R
 
-**## MPNST RNA-seq Analysis**
+## MPNST RNA-seq Analysis
 
 The MPNST analysis uses public RNA-seq data to quantify TE expression directly from FASTQ files with SalmonTE. TE count matrices were analysed with DESeq2 to compare PRC2-loss and PRC2-intact MPNSTs.
 Key notebooks include:
@@ -82,7 +63,7 @@ Key notebooks include:
 25.3_MPNST_TE_count_full_run.ipynb
 25.4_MPNST_TE_differential_expression.ipynb
 
-**## Data Sources**
+## Data Sources
 
 This project used publicly available or controlled-access datasets and external reference resources, including:
 TCGA genomic and clinical data;
@@ -92,7 +73,7 @@ public MPNST RNA-seq metadata and FASTQ files;
 SalmonTE human repeat reference files.
 These data files are not redistributed in this repository.
 
-**## Files Not Included**
+## Files Not Included
 
 The following files are intentionally excluded because they are large, externally generated, controlled access, or reproducible from the analysis code:
 raw FASTQ files;
@@ -104,7 +85,7 @@ full differential expression result tables;
 generated thesis figures and appendix tables;
 local software installations, virtual environments and containers.
 
-**##Software**
+## Software
 
 The analyses were performed using R, Bioconductor and Jupyter Notebook. Main tools and packages included:
 limma;
@@ -115,9 +96,6 @@ TCGA data access and processing packages;
 ggplot2 and related plotting packages.
 Exact package versions may vary between environments. The notebooks contain the analysis code and can be adapted to local paths and software installations.
 
-**##Reproducibility Notes**
+## Reproducibility Notes
 The notebooks are numbered approximately in the order in which analyses were performed. Some paths reflect the original JupyterHub project structure and may need to be edited before rerunning the code in a new environment.
 The MPNST analysis requires SalmonTE to be installed or otherwise available, together with the relevant FASTQ files. The TCGA analyses require access to the relevant TCGA data and REdiscoverTE expression resources.
-
-**##Project Context**
-This repository accompanies an MSc Genomic Medicine thesis investigating chromatin regulator disruption and TE expression in cancer. It is provided to support transparency and reproducibility of the analysis workflow.
