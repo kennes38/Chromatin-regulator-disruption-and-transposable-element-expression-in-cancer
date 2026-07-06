@@ -58,30 +58,10 @@ Key notebooks:
 - `25.3_MPNST_TE_count_full_run.ipynb`
 - `25.4_MPNST_TE_differential_expression.ipynb`
 
-## Recommended Repository Organisation
 
-```text
-.
-├── README.md
-├── notebooks/
-│   ├── tcga_prc2/
-│   ├── tcga_histone_modifier/
-│   ├── tcga_swi_snf/
-│   ├── tcga_individual_gene_models/
-│   └── mpnst_salmonte/
-├── scripts/
-│   ├── tcga/
-│   ├── mpnst/
-│   └── figures/
-├── outputs/
-│   ├── tables/
-│   └── figures/
-└── docs/
 
-## Data Sources
-The project used:
-TCGA mutation, copy-number and sample metadata.
-REdiscoverTE pan-cancer TE expression data.
-GENCODE gene coordinates for updated target-gene interval annotation.
-Public MPNST RNA-seq metadata and FASTQ files.
-SalmonTE human repeat reference annotation for the MPNST TE analysis.
+
+
+
+
+
